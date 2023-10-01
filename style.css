@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+header .section1 p,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --footerBlue: dodgerblue;
+    --gray: #888888;
+    --textBlue: #0437F2;
+    --shadowBlue: #0047AB;
+}
+
+header {
+    background-image: url(img/headerBackground.png);
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nameOnImage {
+    padding-top: 14rem;
+    padding-left: 0.5rem;
+    font-weight: 500;
+    font-size: x-large;
+    color: white;
+}
+
+header .section1 {
+    background-image: url(img/image.jpg);
+    background-size: cover;
+    height: 16rem;
+    width: 24rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+}
+
+header .section2 {
+    height: 13rem;
+    width: 27rem;
+    background-color: white;
+    margin-top: 4rem;
+    border-radius: 2px;
+    border: 0.5px solid var(--gray);
+    box-shadow: 5px 10px var(--gray);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .section2 p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition-property: color;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.25s;
+}
+
+header section:hover {
+    box-shadow: 5px 10px var(--shadowBlue);
+    cursor: pointer;
+}
+
+header .section2 h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.headerIcons {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.headerIcons a i:hover {
+    color: var(--textBlue);
+}
+
+h3 {
+    transition-property: color;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.25s;
+}
+
+h3:hover {
+    color: var(--textBlue);
+    cursor: pointer;
+}
+
+main section {
+    box-shadow: 5px 10px var(--gray);
+}
+
+main section:hover {
+    box-shadow: 5px 10px var(--shadowBlue);
+    color: var(--textBlue);
+}
+
+section p:hover {
+    color: var(--textBlue);
+    cursor: pointer;
+}
+
+main .myWorkDiv {
+    width: 51rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .myWorkDiv h3 {
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+}
+
+section > img {
+    width: 100%;
+    height: 35%;
+}
+
+main section {
+    width: 15rem;
+    height: 13rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.wrapper {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+main .section1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+main .section2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+main .section3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+main .section4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+main .section5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+main .section6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+i {
+    color: black;
+}
+
+main section:hover {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.25s;
+}
+
+main section:hover {
+    transform: perspective(100px) translateZ(5px);
+}
+
+main img:hover {
+    transform: perspective(100px) translateZ(-20px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.projectDetails {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.projectDetails h4 {
+    padding-right: 1rem;
+}
+
+.languages {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+footer {
+    height: 18rem;
+    background-color: var(--footerBlue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+footer .section1 {
+    height: 90%;
+    width: 25.5rem;
+    padding: 15px;
+}
+
+footer .section2 {
+    height: 90%;
+    width: 25.5rem;
+}
+
+footer .section2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.footerIcons {
+    padding-top: 1rem;
+}
+
+.footerIcons a i:hover {
+
+    color: white;
+}
+
+footer .section1 p {
+    display: flex;
+}
+
+footer .section1 p span {
+    padding-right: 0.5rem;
+}
+
+footer .span2 {
+    padding-top: 0.4rem;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        height: 20rem;
+    }
+
+    header .section1 {
+        height: 17rem;
+    }
+
+    header .section2 {
+        height: 14rem;
+    }
+
+    .nameOnImage {
+        padding-top: 15rem;
+    }
+
+    main .myWorkDiv {
+        width: 33rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main .section1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    main .section2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    main .section3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    main .section4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    main .section5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    main .section6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    footer {
+        height: 19rem;
+        padding: 20px;
+    }
+
+    footer .section1 {
+        height: 95%;
+        width: 23.5rem;
+        padding: 10px;
+    }
+
+    footer .section2 {
+        height: 95%;
+        width: 23.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .section1 {
+        height: 17rem;
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    header .section2 {
+        height: 18rem;
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        border: none;
+    }
+
+    header .section2 h3 {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .headerIcons {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .nameOnImage {
+        text-align: center;
+    }
+
+    main .myWorkDiv {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .myWorkDiv h3 {
+        text-align: center;
+    }
+
+    main .section1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    main .section2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    main .section3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    main .section4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    main .section5 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    main .section6 {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    footer {
+        height: 35rem;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .section1 {
+        height: 80%;
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .section2 {
+        height: 80%;
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+
+    .footerIcons {
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+}
